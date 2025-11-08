@@ -288,6 +288,92 @@ html {
   right: 20px;
 }
 
+/* Reviews Section */
+.reviews-section {
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #fff5ed 0%, #ffffff 100%);
+}
+
+.reviews-subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 1.1rem;
+  margin-top: -1rem;
+  margin-bottom: 3rem;
+}
+
+.reviews-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.review-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.review-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(243, 136, 31, 0.15);
+  border-color: #f3881f;
+}
+
+.review-stars {
+  font-size: 1.2rem;
+  color: #f3881f;
+}
+
+.review-text {
+  color: #555;
+  line-height: 1.8;
+  font-size: 1rem;
+  font-style: italic;
+  flex-grow: 1;
+}
+
+.review-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.author-avatar {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #f3881f 0%, #ff9d42 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.author-info h4 {
+  margin: 0;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.author-info p {
+  margin: 0.25rem 0 0 0;
+  color: #888;
+  font-size: 0.85rem;
+}
+
 /* Features Section */
 .features-section {
   max-width: 1200px;
@@ -700,6 +786,10 @@ html {
   .slide-subtext {
     font-size: 1.2rem;
   }
+
+  .reviews-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 }
 
 @media (max-width: 768px) {
@@ -718,22 +808,6 @@ html {
   .download-btn {
     font-size: 0.85rem;
     padding: 0.6rem 1rem;
-  }
-
-  .hero {
-    padding: 6rem 1.5rem 3rem;
-  }
-
-  .hero-title {
-    font-size: 2.5rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1.1rem;
-  }
-
-  .hero-tagline {
-    font-size: 1.1rem;
   }
 
   .hero-slider {
@@ -765,6 +839,19 @@ html {
 
   .slider-dots {
     bottom: 20px;
+  }
+
+  .reviews-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .review-card {
+    padding: 1.5rem;
   }
 
   .section-title {
@@ -821,10 +908,6 @@ html {
 }
 
 @media (max-width: 480px) {
-  .hero-title {
-    font-size: 2rem;
-  }
-
   .hero-slider {
     height: 350px;
   }
@@ -850,6 +933,14 @@ html {
 
   .dot.active {
     width: 30px;
+  }
+
+  .reviews-grid {
+    gap: 1rem;
+  }
+
+  .review-card {
+    padding: 1.25rem;
   }
 
   .feature-card {

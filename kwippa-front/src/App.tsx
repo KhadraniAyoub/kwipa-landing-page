@@ -126,23 +126,6 @@ function App() {
         </div>
       </section>
 
-      {/* Hero Section */}
-      <header className="hero">
-        <div className="hero-content">
-          <h1 className="hero-title">
-            Your Self-Care, <span className="highlight">Simplified</span>
-          </h1>
-          <p className="hero-subtitle">
-            Kwipa is a modern, user-friendly SaaS platform that connects clients with local barbershops, 
-            beauty salons, spas, and personal care professionals. Discover, book, and pay for services like 
-            haircuts, massages, nail treatments, personal training, and more—all in one place.
-          </p>
-          <p className="hero-tagline">
-            <strong>The Glovo of personal care services</strong> — bringing self-care to your fingertips.
-          </p>
-        </div>
-      </header>
-
       {/* Features Section */}
       <section className="features-section" id="features">
         <h2 className="section-title">Key Features</h2>
@@ -292,6 +275,104 @@ function App() {
                   alt="Download on the App Store" 
                 />
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Client Reviews Section */}
+      <section className="reviews-section">
+        <h2 className="section-title">What Our Clients Say</h2>
+        <p className="reviews-subtitle">Real experiences from people who love Kwipa</p>
+        
+        <div className="reviews-grid">
+          <div className="review-card">
+            <div className="review-stars">⭐⭐⭐⭐⭐</div>
+            <p className="review-text">
+              "Kwipa made finding the perfect barber so easy! I loved being able to see their portfolio 
+              before booking. My haircut turned out exactly how I wanted!"
+            </p>
+            <div className="review-author">
+              <div className="author-avatar">👨</div>
+              <div className="author-info">
+                <h4>Ahmed K.</h4>
+                <p>Regular Client</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="review-card">
+            <div className="review-stars">⭐⭐⭐⭐⭐</div>
+            <p className="review-text">
+              "As a salon owner, Kwipa has transformed my business. The calendar management is so simple, 
+              and I never miss an appointment thanks to the automated reminders!"
+            </p>
+            <div className="review-author">
+              <div className="author-avatar">👩</div>
+              <div className="author-info">
+                <h4>Fatima M.</h4>
+                <p>Salon Owner</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="review-card">
+            <div className="review-stars">⭐⭐⭐⭐⭐</div>
+            <p className="review-text">
+              "I can finally book my spa appointments at 2 AM if I want! The app is incredibly user-friendly, 
+              and I love that I can pay directly through it. Game changer!"
+            </p>
+            <div className="review-author">
+              <div className="author-avatar">👨</div>
+              <div className="author-info">
+                <h4>Youssef R.</h4>
+                <p>Verified User</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="review-card">
+            <div className="review-stars">⭐⭐⭐⭐⭐</div>
+            <p className="review-text">
+              "The verified reviews with photos helped me choose the best stylist for my hair type. 
+              The result was amazing! I've already booked my next appointment."
+            </p>
+            <div className="review-author">
+              <div className="author-avatar">👩</div>
+              <div className="author-info">
+                <h4>Sara L.</h4>
+                <p>Happy Client</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="review-card">
+            <div className="review-stars">⭐⭐⭐⭐⭐</div>
+            <p className="review-text">
+              "Managing my barber shop has never been easier. The client database feature helps me 
+              remember everyone's preferences. My customers love the personal touch!"
+            </p>
+            <div className="review-author">
+              <div className="author-avatar">👨</div>
+              <div className="author-info">
+                <h4>Karim H.</h4>
+                <p>Barber Professional</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="review-card">
+            <div className="review-stars">⭐⭐⭐⭐⭐</div>
+            <p className="review-text">
+              "I love that I can add notes and upload reference photos before my appointment. 
+              My stylist knew exactly what I wanted. No more miscommunication!"
+            </p>
+            <div className="review-author">
+              <div className="author-avatar">👩</div>
+              <div className="author-info">
+                <h4>Leila A.</h4>
+                <p>Satisfied Customer</p>
+              </div>
             </div>
           </div>
         </div>
